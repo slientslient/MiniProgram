@@ -1,0 +1,50 @@
+<view class="container">
+    <!-- <view class="display-h top-title-wrapper">
+        <image src="/images/icon_orange_rectangle.png" class="icon-orange-rectangle"></image>
+        <text class="top-title-text">天华办公室测试柜</text>
+    </view> -->
+
+    <view class="tab-container-wrapper">
+        <tabs className="tab-container" tabs="{{tabs}}" onTabClick="handleTabClick" onChange="handleTabChange"
+            activeTab="{{activeTab}}">
+
+            <block a:for="{{tabs}}">
+                <tab-content key="{{index}}">
+                    <view class="scroll-list-wrapper">
+                        <scroll-view class="scroll-list" scroll-y="{{true}}">
+                            <view class="cargo-title-wrapper cargo-divide-line">
+                                <view class="title-text-1">
+                                    <text>货道号</text>
+                                </view>
+                                <view class="title-text-2">
+                                    <text>商品名称</text>
+                                </view>
+                                <view class="title-text-3">
+                                    <text>柜内数量</text>
+                                </view>
+                            </view>
+
+                            <block a:for="{{currentList.goodsList}}" a:for-item="goods" a:for-index="idx" a:key="idx">
+                                <view class="cargo-title-wrapper ">
+                                    <view class="content-text-1">
+                                        <text>{{goods.serial}}</text>
+                                    </view>
+                                    <view class="content-text-2">
+                                        <text>{{goods.name}}</text>
+                                    </view>
+                                    <view class="content-text-3">
+                                        <text>-</text>
+                                        <input type="number" value="{{goods.num}}" onInput="bindInputNumber" />
+                                        <text>+</text>
+                                    </view>
+                                </view>
+                            </block>
+                        </scroll-view>
+                    </view>
+                </tab-content>
+            </block>
+
+        </tabs>
+    </view>
+
+</view>

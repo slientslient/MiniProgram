@@ -1,0 +1,135 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* tab css */
+
+.tab-container-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 200rpx;
+  box-sizing: border-box;
+}
+
+/* 复写tab组件样式 */
+
+.tab-container,
+.tab-container .am-tabs-tab-bar-wrap {
+  height: 100%;
+}
+
+.tab-container .am-tabs-tab-bar-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-container .am-tabs-content-wrap {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.tab-container .am-tabs-content-wrap .am-tabs-pane-wrap{
+  height: 100%;
+}
+
+/* 滚动列表 */
+
+.scroll-list-wrapper {
+  padding: 0 30rpx 20rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.scroll-list {
+  height: 100%;
+  background: #f7f9fc;
+  border: 1px solid #cdd6e3;
+}
+
+.cargo-divide-line {
+  border-bottom: 1rpx solid #cdd6e3;
+}
+
+.cargo-title-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 70rpx;
+  padding-top: 10rpx;
+}
+
+.title-text-1 {
+  padding-left: 15rpx;
+  width: 120rpx;
+  font-size: 30rpx;
+  color: #8aa1bf;
+}
+
+.title-text-2 {
+  padding-left: 20rpx;
+  width: 380rpx;
+  font-size: 30rpx;
+  color: #8aa1bf;
+}
+
+.title-text-3 {
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+  width: 160rpx;
+  font-size: 30rpx;
+  color: #8aa1bf;
+  text-align: right;
+}
+
+.content-text-1 {
+  padding-left: 15rpx;
+  width: 120rpx;
+  font-size: 30rpx;
+  color: #303948;
+  text-align: center;
+}
+
+.content-text-2 {
+  padding-left: 20rpx;
+  width: 380rpx;
+  font-size: 30rpx;
+  color: #303948;
+}
+
+.content-text-3 {
+  display: flex;
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+  justify-items: center;
+  width: 136rpx;
+  height: 38rpx;
+}
+
+/* 头部样式 */
+
+.icon-orange-rectangle {
+  width: 6rpx;
+  height: 34rpx;
+}
+
+.top-title-wrapper {
+  padding-left: 30rpx;
+  padding-top: 34rpx;
+}
+
+.top-title-text {
+  font-size: 30rpx;
+  color: #303948;
+  padding-left: 10rpx;
+}
+
+.middle-list-wrapper {
+  background: #f7f9fc;
+  border: 1rpx solid #cdd6e3;
+  width: 690rpx;
+  margin-left: 30rpx;
+  overflow-y: auto;
+  height: 100%;
+}
